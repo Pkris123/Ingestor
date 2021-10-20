@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>T-Ingestor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Ubuntu:wght@300;400;500&family=Inter:wght@300&display=swap" rel="stylesheet">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body >
+  
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-arrow-circle-left ico-slide"></i></a><br>
+    <a class="sideIcon" href="#"><i class="fas fa-plus ico-slide" ></i>&nbsp Create new Job</a>
+    <a class="sideIcon" href="#"><i class="fab fa-bitbucket"></i>&nbsp My bucket</a>
+    <a class="sideIcon" href="#"><i class="fas fa-list ico-slide"></i>&nbsp Job history</a>
+    <a class="sideIcon" href="#"><i class="fas fa-chart-bar ico-slide"></i>&nbsp Activity log</a><br><br><br><br><br><br><br>
+    <a class="sideIcon" href="#"><i class="fas fa-headset ico-slide"></i>&nbsp Contact us</a><br>
+    <a class="sideIcon" href="#"><img class="about-us" src="images/logo.png" alt=""> About us </a>
+    <div id="side-bor">
+
+    </div>
+  </div>
+  <div id="main">
+    <section id="title">
+
+      <div class="cf1 container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark "> 
+          <img class="logo" src="images/logo.png" alt="">      
+          <a class="navbar-brand" id="brand" href="#">-Ingestor</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link openbtn" aria-current="page" href="#footer">Demo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link openbtn" href="#pricing">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link slide-nav openbtn" aria-current="page" onclick="openNav()" href="javascript:void(0)">&#9776</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="cf2 container-fluid">
+      <!-- Title -->
+        <div class="row">
+          <div class="Ldiv col-lg-6">
+
+            <h2 id="tag-line">Integrate to Accelerate.</h2>
+            <h1 class="description">Unified Platform for Data Connectors & Work Flow</h1>
+            
+
+          </div>
+          <div class="Rdiv col-lg-6">
+            <button type="button" class="get-started btn btn-outline-light btn-lg download-button">Get started</button>
+            <img class="video" src="images/video.png" alt="">
+          </div>
+        </div>
+      </div>
+        
+
+    </section>
+
+
+    <!-- Features -->
+
+    <section id="features">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="feature-icon fas fa-check-circle fa-5x"></i>
+          <h3>Operational Efficiency.</h3>
+          <p>Build Connections to applications to automate data flow. Graphical UI eliminates need of code to execute pipelines.</p>
+        </div>  
+
+        <div class="feature-box col-lg-4">
+          <i class="feature-icon fas fa-map-marker-alt fa-5x"></i>
+          <h3>One Stop Solution</h3>
+          <p>One platform for multiple sources, for distributing data across multiple destinations</p>
+        </div>   
+
+        <div class="feature-box col-lg-4">
+          <i class="feature-icon fas fa-shield-alt fa-5x"></i>
+          <h3>Secure & Compliant</h3>
+          <p>Data Masking,  sensitive data is obfuscated, Data loss prevention, Elimination of duplicates.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Testimonials -->
+
+    <!-- <section id="testimonials">
+
+      <div id="carouselControls" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+            <div class="attestant">
+              <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+              <em>Pebbles, New York</em>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <div class="attestant">
+              <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+              <em>Beverly, Illinois</em>
+            </div>
+          </div>
+        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      
+
+
+
+    </section> -->
+
+
+    <!-- Press -->
+
+    <!-- <section id="press">
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+    </section> -->
+
+
+    <!-- Pricing -->
+
+    <!-- <section id="pricing">
+
+      <h2>A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p>
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card h-100">
+            <div class="card-header"><h3>Chihuahua</h3></div>           
+              <div class="card-body">
+                <h2>Free</h2>
+                <p>5 Matches Per Day</p>
+                <p>10 Messages Per Day</p>
+                <p>Unlimited App Usage</p><br>
+                <button type="button" class="btn btn-lg col-6 mx-auto btn-outline-primary">Primary</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card h-100">
+            <div class="card-header"><h3>Labrador</h3></div>
+              <div class="card-body">
+                <h2>$49 / mo</h2>
+                <p>Unlimited Matches</p>
+                <p>Unlimited Messages</p>
+                <p>Unlimited App Usage</p><br>
+                <button type="button" class="btn btn-lg col-6 mx-auto btn-primary">Primary</button>     
+              </div>
+          </div>
+        </div>
+
+        <div class="pricing-col col-lg-4 col-md-12">
+          <div class="card h-100">
+            <div class="card-header"><h3>Mastiff</h3></div>           
+              <div class="card-body">
+                <h2>$99 / mo</h2>
+                <p>Pirority Listing</p>
+                <p>Unlimited Matches</p>
+                <p>Unlimited Messages</p>
+                <p>Unlimited App Usage</p>
+                <button type="button" class="btn btn-lg col-6 mx-auto btn-primary">Primary</button>
+              </div>        
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    </section> -->
+
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+
+      <h3 id="cta-head">Lorem Ipsum.</h3>
+    
+      <button type="button" class="cta-btn btn btn-light btn-md download-button">About us</button>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <i class="foot-icon fab fa-twitter fa-2x"></i>
+      <i class="foot-icon fab fa-facebook-f fa-2x"></i>
+      <i class="foot-icon fab fa-instagram fa-2x"></i>
+      <i class="foot-icon fas fa-envelope-open-text fa-2x"></i>
+      <p>© Copyrights Tredence</p>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </div>
+<script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
